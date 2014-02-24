@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED8B7A75-43A3-4B6C-A2B3-4DA4497BE1AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChocoMamboDBConnection</RootNamespace>
+    <AssemblyName>ChocoMamboDBConnection</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBranches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBranches.Designer.cs">
+      <DependentUpon>frmBranches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBranchesGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBranchesGrid.Designer.cs">
+      <DependentUpon>frmBranchesGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompany.Designer.cs">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartmentGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartmentGrid.Designer.cs">
+      <DependentUpon>frmDepartmentGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartments.Designer.cs">
+      <DependentUpon>frmDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeGrid.Designer.cs">
+      <DependentUpon>frmEmployeeGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployees.Designer.cs">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngredients.Designer.cs">
+      <DependentUpon>frmIngredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngredientsGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngredientsGrid.Designer.cs">
+      <DependentUpon>frmIngredientsGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginGrid.Designer.cs">
+      <DependentUpon>frmLoginGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProducts.Designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductsGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductsGrid.Designer.cs">
+      <DependentUpon>frmProductsGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseOrderGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseOrderGrid.Designer.cs">
+      <DependentUpon>frmPurchaseOrderGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetailers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetailers.Designer.cs">
+      <DependentUpon>frmRetailers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetailersGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetailersGrid.Designer.cs">
+      <DependentUpon>frmRetailersGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesOrder.Designer.cs">
+      <DependentUpon>frmSalesOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesOrderGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesOrderGrid.Designer.cs">
+      <DependentUpon>frmSalesOrderGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierGrid.Designer.cs">
+      <DependentUpon>frmSupplierGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuppliers.Designer.cs">
+      <DependentUpon>frmSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBranchesGrid.resx">
+      <DependentUpon>frmBranchesGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartmentGrid.resx">
+      <DependentUpon>frmDepartmentGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeGrid.resx">
+      <DependentUpon>frmEmployeeGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngredientsGrid.resx">
+      <DependentUpon>frmIngredientsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginGrid.resx">
+      <DependentUpon>frmLoginGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBranches.resx">
+      <DependentUpon>frmBranches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompany.resx">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartments.resx">
+      <DependentUpon>frmDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployees.resx">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngredients.resx">
+      <DependentUpon>frmIngredients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductsGrid.resx">
+      <DependentUpon>frmProductsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseOrderGrid.resx">
+      <DependentUpon>frmPurchaseOrderGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetailers.resx">
+      <DependentUpon>frmRetailers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetailersGrid.resx">
+      <DependentUpon>frmRetailersGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesOrder.resx">
+      <DependentUpon>frmSalesOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesOrderGrid.resx">
+      <DependentUpon>frmSalesOrderGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierGrid.resx">
+      <DependentUpon>frmSupplierGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuppliers.resx">
+      <DependentUpon>frmSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBConnection\DBConnection.csproj">
+      <Project>{05B12FA7-1360-4B40-9AD5-87DA199032DD}</Project>
+      <Name>DBConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
